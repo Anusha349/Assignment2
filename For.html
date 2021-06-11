@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>For loop</title>
+<body bgcolor=pink>
+<h1>Factorial</h1>
+<p id="demo">Factorial of a given number using for loop</p>
+<button onclick = "func()"> Factorial </button>  
+<script>
+function func(){
+ var i,n=5,f=1;
+ for(i=1;i<=n;i++)
+ {
+ f=f*i;
+ }
+ document.getElementById("demo").innerHTML = "The factorial of the given number is"+f;
+ }
+ </script>
+ </body>
+ </head>
+ </html>
