@@ -1,0 +1,26 @@
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 5s;
+  animation-iteration-count:3;
+  animation-delay: 3s;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+<h1>The animation-name Property</h1>
+<p>Specify a name for the @keyframes animation.</p>
+<div></div>
+<p><strong>Note:</strong> The animation property is not supported in Internet Explorer 9 and earlier versions.</p>
+</body>
+</html>
