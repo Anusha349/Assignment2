@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Array Sorting</title>
+<body>
+<h1>Sorting in descending order</h1>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"> An array consisting of fruit names and sorting in a descending order</p>
+<script type=text/javascript>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+function myFunction() 
+{
+  fruits.sort();
+  fruits.reverse();
+  document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+</body>
+</head>
+</html>
