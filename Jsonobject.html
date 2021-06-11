@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>
+JSON Object</title>
+</head>
+<body>
+<h1>Access a JavaScript Object</h1>
+<p id="demo"></p>
+<script>
+const myJSON = '{"name":"Anusha", "age":21}';
+const myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj.name;
+</script>
+</body>
+</html>
