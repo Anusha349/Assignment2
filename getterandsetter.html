@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>getter and setter</title>
+</head>
+<body bgcolor=purple>
+<h1 align=center>counter program</h1>
+<p> counter program using getter and setter accessors</p>
+<p id="demo"></p>
+<script>
+var obj = {counter:0};
+Object.defineProperty(obj, "reset", {
+  get : function () {
+  this.counter = 0;
+  }
+});
+Object.defineProperty(obj, "increment", {
+  get : function () {
+  this.counter++;}
+});
+Object.defineProperty(obj, "decrement", {
+  get : function () {
+  this.counter--;}
+});
+Object.defineProperty(obj, "add", {
+  set : function (value) {this.counter += value;}
+});
+Object.defineProperty(obj, "subtract", {
+  set : function (value) {this.counter -= value;}
+});
+document.getElementById("demo").innerHTML=Object.counter;
+</script>
+</body>
+</html>
