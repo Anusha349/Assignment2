@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+h2.a {
+  visibility: visible;
+}
+h2.b {
+  visibility: hidden;
+}
+table, td {
+  border-collapse: collapse;
+  border: 1px dotted black;
+}
+tr.collapse {
+  visibility: collapse;
+}
+.mySpan {
+  background-color:red;
+  display:inline;
+}
+.B{
+  background-color:red;
+  display:none;
+}
+.c{
+  background-color:Yellow;
+  display:block;
+}
+.d{
+  background-color:green;
+  display:contents;
+}
+.e{
+  background-color:blue;
+  display:list-item;
+}
+</style>
+</head>
+<body>
+<h1>The visibility Property</h1>
+<h2 class="a">This heading is visible</h2>
+<h2 class="b">This heading is hidden</h2>
+<p>This is some <span class="mySpan">Important</span> text</p>
+<p>A span element.<span class="B"> Another </span>span element.</p>
+<p>A span element.<span class="c">mySpan.</span>Another span element.</p>
+<p>A span element. <span class="d">mySpan.</span> Another span element.</p>
+<p>A span element.
+mySpan.<span class="e">
+Another </span>span element.</p>
+<table>
+  <tr>
+    <td>Anusha</td> 
+    <td>Cheripally</td>
+  </tr>
+  <tr class="collapse">
+    <td>Anu</td>
+    <td>Anusha</td>
+  </tr>
+</table>
+<p>Notice that the hidden heading still takes up space on the page.</p>
+</body>
+</html>
