@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>object</title>
+<body>
+<h1>JavaScript Object Properties</h1>
+<p>There are two different ways to access an object property:</p>
+<p>You can use .property or ["property"].</p>
+<p id="demo"></p>
+<script>
+var person = {
+  firstname:"Anusha",
+  lastname:"Cheripally",
+  age:21,
+};
+document.write(person["firstname"] + " is " + person["age"] + " years old.")
+document.getElementById("demo").innerHTML=person.firstname+" "+person.lastname;
+</script>
+</body>
+</head>
+</html>
