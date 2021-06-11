@@ -1,0 +1,37 @@
+<html>
+<head>
+<body bgcolor=orange>
+<h1 align=center>JavaScript Functions</h1>
+<p>This example calls the fulldetails of a computer using call()
+</p>
+<p id="demo"></p>
+<p id="for"></p>
+<p id="task"></p>
+<script>
+var computer = {
+  fulldetails: function(color, processor) {
+    return this.company + " " + this.ram + "," + color + "," + processor;
+  }
+}
+var computer1 = {
+  company:"Dell",
+  ram: "8gb"
+}
+var computer2 = {
+  company:"Lenovo",
+  ram: "8gb"
+}
+var computer3 = {
+   company:"HP",
+   ram:"8gb"
+}
+var x = computer.fulldetails.call(computer1, "grey", "i5"); 
+document.getElementById("demo").innerHTML = x; 
+var y = computer.fulldetails.call(computer2, "White", "i7"); 
+document.getElementById("for").innerHTML = y;
+var z = computer.fulldetails.apply(computer3, ["black", "i3"]); 
+document.getElementById("task").innerHTML = z; 
+</script>
+</body>
+</head>
+</html>
